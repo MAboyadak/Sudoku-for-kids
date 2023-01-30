@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sudoko Game</title>
+
+<link rel="stylesheet" href="assets/style.css">
+<style>
+    
+    .error{
+        display: inline-block;
+        padding: 5px;
+        margin-bottom: 10px;
+        color:rgb(251, 251, 251);
+        background-color: rgba(255, 0, 0, 0.664);
+        border-radius: 5px;
+    }
+    .hidden{
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+    <div id="login-container" class="container">
+        <form action="">
+            <div class="form-group">
+                <label>Username :</label>
+                <span name="name-err" class="hidden error"></span><br>
+
+                <input id="username" name="name" placeholder="Enter your name.." autocomplete="off"/>
+            </div>
+            <div class="form-group">
+                <label>Level :</label>
+                <select name="level" disabled>
+                    <option>level 1 (4*4)</option>
+                    <!-- <option>level 2 (6*6)</option>
+                    <option>level 3 (9*9)</option> -->
+                </select>
+            </div>
+            <button id="submit-btn" class="button">Login</button>
+        </form>
+    </div>
+
+<script src="assets/functions.js"></script>            
+<script src="assets/login-form.js"></script>
+
+</body>
+</html>
